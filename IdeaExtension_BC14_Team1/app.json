@@ -1,0 +1,28 @@
+{
+  "id": "3d76878f-0311-4da4-98a4-08269021b05d",
+  "name": "Suggestions",
+  "publisher": "Autocont a.s.",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "http://tempuri.org/help/",
+  "showMyCode": true,
+  "target": "Internal",
+  "features": ["TranslationFile"],
+  "runtime": "3.0"
+}
