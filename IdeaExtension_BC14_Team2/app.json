@@ -1,0 +1,28 @@
+{
+  "id": "f2cbebfb-5367-4e15-9602-577e30e21572",
+  "name": "ParcelManagement",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://tempuri.org/help/",
+  "showMyCode": true,
+  "runtime": "3.0",
+  "target": "Internal",
+  "features": ["TranslationFile"]
+}

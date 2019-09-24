@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "My server123",
+            "type": "al",
+            "request": "launch",
+            "server": "http://localhost",
+            "serverInstance": "BC140CZ",
+            "port": 7049,
+            "authentication": "Windows",
+            "startupObjectId": 50120,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "schemaUpdateMode": "ForceSync"
+        },
+    ]
+}

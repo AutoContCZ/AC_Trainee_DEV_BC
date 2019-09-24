@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="cs-CZ" original="ParcelManagement">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 364602927 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parcel Management Setup</source>
+          <target>Nastavení zásilek</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Parcel Management Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 364602927 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Parcel Management Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 364602927 - Field 3789264935 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parcel Nos.</source>
+          <target>Čísla zásilek</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Parcel Management Setup - Field Parcel Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 364602927 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Parcel Management Setup</source>
+          <target>Nastavení zásilek</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Parcel Management Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 364602927 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target>Obecné</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Parcel Management Setup - Control General - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
