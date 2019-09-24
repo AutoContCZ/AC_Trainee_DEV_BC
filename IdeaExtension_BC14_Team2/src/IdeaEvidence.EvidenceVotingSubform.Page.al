@@ -14,14 +14,9 @@ page 50125 "Evidence Voting Subform"
                 {
                     ApplicationArea = All;
                 }
-                field("Vote"; "Vote")
-                {
-                    ApplicationArea = All;
-                }
                 field("Note"; "Note")
                 {
                     ApplicationArea = All;
-                    Editable = false;
                 }
             }
         }
@@ -43,15 +38,13 @@ page 50125 "Evidence Voting Subform"
         }
     }
 
+
     // Při novém záznamu předvyplní jméno přihlášeného uživatele
     trigger OnNewRecord(BelowxRec: Boolean)
     var
         EvVotingTable: Record "Evidence Voting Table";
     begin
         "User" := UserID;
-        // if Rec."Vote" = true then begin
-        //     Rec."Note".Editable = true;
-        // end;
     end;
 
 }

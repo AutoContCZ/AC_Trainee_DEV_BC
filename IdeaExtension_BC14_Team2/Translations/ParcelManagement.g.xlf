@@ -103,11 +103,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Evidence Voting Table - Field No. Series - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 528839132 - Field 2829769180 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Vote</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Evidence Voting Table - Field Vote - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 3263325567 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Primary key</source>
           <note from="Developer" annotates="general" priority="2"></note>
