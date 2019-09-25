@@ -123,6 +123,31 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Idea Evidence Setup - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1723435618 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Voting Notification Table - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1723435618 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Voting Notification Table - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1723435618 - Field 556545117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Votes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Voting Notification Table - Field Votes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1855177068 - Field 2467865875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Set Voting Threshold - Field Set value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1855177068 - Field 674553203 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Set Voting Threshold - Field Default Field - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 609790201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Ideas</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -138,10 +163,25 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Evidence Category Subform - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 647232923 - Action 1542104134 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check voting threshold</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ideas Evidence - Action Zkontroluj - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 647232923 - Action 602172024 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set voting threshold</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ideas Evidence - Action NastavPrah - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1435297360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Voting</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Evidence Voting Subform - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3307981861 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Voting Notifications</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Voting Notifications - Property Caption</note>
         </trans-unit>
       </group>
     </body>
