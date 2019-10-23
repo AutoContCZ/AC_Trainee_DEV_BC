@@ -1,16 +1,17 @@
-page 50128 "Voting Notifications"
+page 50134 "Notifications"
 {
-    Caption = 'Voting Notifications';
     PageType = List;
     ApplicationArea = All;
-    UsageCategory = Lists;
-    SourceTable = "Voting Notification Table";
+    UsageCategory = Administration;
+    SourceTable = "Idea Evidence Header";
+    Editable = false;
+    Caption = 'Ideas Notifications';
 
     layout
     {
         area(Content)
         {
-            repeater(Group)         //Musi byt repeater pokud chceme standardni seznam
+            repeater(GroupName)
             {
                 field("No."; "No.")
                 {
@@ -20,27 +21,86 @@ page 50128 "Voting Notifications"
                 field("Name"; "Name")
                 {
                     ApplicationArea = All;
+                    StyleExpr = 'strong';
                 }
-                field("Votes"; "Votes")
+                field("Submitter"; "Submitter")
                 {
                     ApplicationArea = All;
+                }
+                field("State"; "State")
+                {
+                    ApplicationArea = All;
+                    StyleExpr = SFond;
+                }
+                field("Number of Votes"; "Number of Votes")
+                {
+                    ApplicationArea = All;
+                    StyleExpr = VFond;
                 }
             }
         }
     }
+
+
     actions
     {
         area(Processing)
         {
-            action(ActionName)
+            action("Approve")
             {
+                Caption = 'Approve';
+                Image = Approval;
                 ApplicationArea = All;
+                Promoted = true;
+                PromotedCategory = Process; //Abych dostal tlacitko na action toolbar
 
-                trigger OnAction();
+                trigger OnAction()
+                var
                 begin
+                    Rec.State := 4;
+                    Rec.Modify(true);
+                end;
+            }
+            action("Disapprove")
+            {
+                Caption = 'Disapprove';
+                Image = Reject;
+                ApplicationArea = All;
+                Promoted = true;
+                PromotedCategory = Process; //Abych dostal tlacitko na action toolbar
 
+                trigger OnAction()
+                begin
+                    Rec.State := 5;
+                    Rec.Modify(true);
+                end;
+            }
+            action("Mark as completed")
+            {
+                Caption = 'Mark as completed';
+                Image = Apply;
+                ApplicationArea = All;
+                Promoted = true;
+                PromotedCategory = Process; //Abych dostal tlacitko na action toolbar
+
+                trigger OnAction()
+                begin
+                    Rec.State := 3;
+                    Rec.Modify(true);
                 end;
             }
         }
     }
+
+    var
+        VFond: Text[20];
+        SFond: Text[20];
+
+    trigger OnAfterGetRecord()
+    var
+        IdEvFunctions: Codeunit "Idea Evidence Functions";
+    begin
+        VFond := IdEvFunctions.GetFondforVotes(Rec);
+        SFond := IdEvFunctions.GetFondforStates(Rec);
+    end;
 }

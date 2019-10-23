@@ -19,7 +19,6 @@ page 50124 "Evidence Category Card"
                 field("Category Name"; "Category Name")
                 {
                     ApplicationArea = All;
-
                 }
             }
             part(Lines; "Ideas in Category Subform")
@@ -28,23 +27,4 @@ page 50124 "Evidence Category Card"
             }
         }
     }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-
-                trigger OnAction()
-                begin
-
-                end;
-            }
-        }
-    }
-
-    var
-        myInt: Integer;
 }

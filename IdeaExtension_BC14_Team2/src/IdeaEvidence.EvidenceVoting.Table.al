@@ -21,23 +21,6 @@ table 50124 "Evidence Voting Table"
             TableRelation = User."User Name";
             ValidateTableRelation = false;
         }
-        field(3; "Note"; Text[40])
-        {
-            Caption = 'Note';
-            DataClassification = CustomerContent;
-            //Editable = false;
-        }
-        field(4; "No. Series"; Code[10])
-        {
-            Caption = 'No. Series';
-            DataClassification = CustomerContent;
-            TableRelation = "No. Series";
-        }
-        // field(5; "Vote"; Boolean)
-        // {
-        //     Caption = 'Vote';
-        //     DataClassification = CustomerContent;
-        // }
     }
 
     keys

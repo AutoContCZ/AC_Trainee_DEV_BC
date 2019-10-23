@@ -21,6 +21,7 @@ page 50120 "Ideas Evidence"
                 field("Name"; "Name")
                 {
                     ApplicationArea = All;
+                    StyleExpr = 'strong';
                 }
                 field("Submitter"; "Submitter")
                 {
@@ -33,8 +34,25 @@ page 50120 "Ideas Evidence"
                 field("State"; "State")
                 {
                     ApplicationArea = All;
+                    StyleExpr = SFond; //nastaveni stylu pisma
                 }
-                field("Number of Votes"; "Number of Votes") { }
+                field("Number of Votes"; "Number of Votes")
+                {
+                    ApplicationArea = All;
+                    StyleExpr = VFond;
+
+                }
+                field("Votes Needed to Review"; "Votes Needed to Review")
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
+        area(FactBoxes)
+        {
+            part(Lines; "Evidence Category Subform")
+            {
+                SubPageLink = "Idea No." = field ("No."); // Vazba mezi evidence category subform a category idea connection
             }
         }
     }
@@ -43,62 +61,26 @@ page 50120 "Ideas Evidence"
     {
         area(Processing)
         {
-            action(Zkontroluj)
+            action("Check Threshold")
             {
-                Caption = 'Check voting threshold';
+                Caption = 'Check threshold';
                 Image = ApprovalSetup;
                 ApplicationArea = All;
                 Promoted = true;
                 PromotedCategory = Process; //Abych dostal tlacitko na action toolbar
 
-                trigger OnAction();
+                trigger OnAction()
                 var
-                    Idea_Notification: Record "Voting Notification Table";
-                    Pom_Record: Record "Idea Evidence Header";
-                    pom: Integer;
-                    pom2: Integer;
-                    Voting_Threshold: Integer;
-                    Notification_Count: Integer;
+                    //EvVotingTable: Record "Evidence Voting Table";
+                    EvCodeunit: Codeunit "Idea Evidence Functions";
                 begin
-                    Voting_Threshold := 0;
-                    Pom_Record.FindLast();
-                    pom := 0;
-                    pom2 := 0;
-                    Rec.FindFirst();
-                    repeat
-                        if (Rec."Number of Votes" > Voting_Threshold) then   //Tady si vytahnu hodnotu hlasu pro vybrany zaznam
-                            begin
-                            if pom = 1 then begin
-                                pom2 := 1;
-                            end;
-                            Rec."State" := 2;
-                            Idea_Notification.Init();
-                            Idea_Notification.Validate("No.", Rec."No.");       //Prvni parametr je field v tabulce, ke kteremu patri promenna
-                            Idea_Notification.Validate(Name, Rec.Name);         //Druhym parametrem je prislusna hodnota
-                            Idea_Notification.Validate(Votes, Rec."Number of Votes");
-                            Idea_Notification.Insert(true);
-                            Rec.Modify(true);           //Musi byt pri modifikaci zaznamu
-                        end;
-                        if (Rec."Number of Votes" <= Voting_Threshold) then begin
-                            if pom = 1 then begin
-                                pom2 := 1;
-                            end;
-                            Rec."State" := 1;
-                            Rec.Modify(true);
-                        end;
-                        Rec.Next(1);
-                        if Rec."No." = Pom_Record."No." then begin
-                            pom := 1;
-                        end;
-                    until pom2 = 1;
-                    //Message('Notifikace vytvořeny!');
-                    Message(FORMAT(Notification_Count));
+                    EvCodeunit.CheckVotingThreshold(Rec);
                 end;
             }
-            action(NastavPrah)
+            action("Settings")
             {
-                Caption = 'Set voting threshold';
-                Image = Calculate;
+                Caption = 'Settings';
+                Image = Setup;
                 ApplicationArea = All;
                 Promoted = true;
                 PromotedCategory = Process; //Abych dostal tlacitko na action toolbar
@@ -106,9 +88,101 @@ page 50120 "Ideas Evidence"
                 trigger OnAction();
                 var
                 begin
+                    Page.Run(50122);
                 end;
+            }
+            action("Notifications")
+            {
+                Caption = 'Notifications';
+                Image = Alerts;
+                ApplicationArea = All;
+                Promoted = true;
+                PromotedCategory = Process; //Abych dostal tlacitko na action toolbar
 
+                trigger OnAction();
+                var
+                    IdEvHeader: Record "Idea Evidence Header";
+                begin
+                    IdEvHeader.SetFilter(State, 'Under Review');
+                    Page.Run(Page::"Notifications", "IdEvHeader");
+                end;
+            }
+            action("Add Vote")
+            {
+                ApplicationArea = All;
+                Promoted = true;
+                Caption = 'Add Vote';
+                PromotedCategory = Process;
+                Image = Approval;
+
+                trigger OnAction()
+                var
+                    EvCodeunit: Codeunit "Idea Evidence Functions";
+                begin
+                    EvCodeunit.AddVote(Rec);
+                end;
+            }
+            action("Remove Vote")
+            {
+                ApplicationArea = All;
+                Promoted = true;
+                Caption = 'Remove Vote';
+                PromotedCategory = Process;
+                Image = Cancel;
+
+                trigger OnAction()
+                var
+                    EvCodeunit: Codeunit "Idea Evidence Functions";
+                begin
+                    EvCodeunit.RemoveVote(Rec);
+                end;
+            }
+            action("Categories")
+            {
+                Caption = 'Categories';
+                Image = Category;
+                ApplicationArea = All;
+                Promoted = true;
+                PromotedCategory = Process; //Abych dostal tlacitko na action toolbar
+
+                trigger OnAction()
+                begin
+                    Page.Run(50123);
+                end;
+            }
+            action("Statistics")
+            {
+                Caption = 'Statistics';
+                Image = Statistics;
+                ApplicationArea = All;
+                Promoted = true;
+                PromotedCategory = Process; //Abych dostal tlacitko na action toolbar
+
+
+                trigger OnAction()
+                var
+                    localstatistic: Codeunit StatisticsCodeUnit;
+                begin
+                    localstatistic.CalculateStatistics();
+                end;
             }
         }
     }
+    var
+        VFond: Text[20];
+        SFond: Text[20];
+
+    trigger OnAfterGetRecord()
+    var
+        IdEvFunctions: Codeunit "Idea Evidence Functions";
+        IdEvSetup: Record "Idea Evidence Setup";
+    begin
+        IdEvSetup.FindFirst();
+        "Votes Needed to Review" := IdEvSetup.Threshold - "Number of Votes"; //vypocet sloupce votes needed to review
+        if "Votes Needed to Review" < 0 then "Votes Needed to Review" := 0;
+
+        VFond := IdEvFunctions.GetFondforVotes(Rec);
+        SFond := IdEvFunctions.GetFondforStates(Rec);
+
+    end;
 }

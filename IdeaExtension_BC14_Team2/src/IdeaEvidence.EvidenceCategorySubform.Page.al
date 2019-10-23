@@ -10,15 +10,6 @@ page 50126 "Evidence Category Subform"
         {
             repeater(General)
             {
-                // field("Voting No."; "Voting No.")
-                // {
-                //     ApplicationArea = All;
-                //     // trigger OnAssistEdit()
-                //     // begin
-                //     //     Rec.AssistEditClicked();
-                //     // end;
-
-                // }
                 field("Category No."; "Category No.")
                 {
                     ApplicationArea = All;
@@ -26,6 +17,13 @@ page 50126 "Evidence Category Subform"
                 field("Name"; "Category Name")
                 {
                     ApplicationArea = All;
+                    trigger OnDrillDown()
+                    var
+                        IdeaCateg: Record "Evidence Category Table";
+                    begin
+                        IdeaCateg.Get("Category No.");
+                        Page.Run(Page::"Evidence Category Card", IdeaCateg); //oteviram zaznam ze stranky "Evidence Category Card"
+                    end;
                 }
             }
         }

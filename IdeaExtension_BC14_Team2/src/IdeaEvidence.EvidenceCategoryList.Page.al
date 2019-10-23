@@ -22,7 +22,7 @@ page 50123 "Evidence Category Page"
                 field("Name"; "Category Name")
                 {
                     ApplicationArea = All;
-
+                    StyleExpr = 'strong';
                 }
                 field("Posts"; "Posts")
                 {
@@ -33,22 +33,6 @@ page 50123 "Evidence Category Page"
         area(Factboxes)
         {
 
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-
-                trigger OnAction();
-                begin
-
-                end;
-            }
         }
     }
 }

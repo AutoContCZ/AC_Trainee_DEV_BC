@@ -1,5 +1,6 @@
 page 50121 "Idea Evidence Card"
 {
+
     PageType = Card;
     SourceTable = "Idea Evidence Header";
 
@@ -34,10 +35,7 @@ page 50121 "Idea Evidence Card"
                 {
                     ApplicationArea = All;
                 }
-                part(Lines1; "Evidence Category Subform")
-                {
-                    SubPageLink = "Idea No." = field ("No."); // Vazba mezi evidence category subform a category idea connection
-                }
+
 
             }
             field("Description"; "Description")
@@ -45,33 +43,13 @@ page 50121 "Idea Evidence Card"
                 ApplicationArea = All;
                 MultiLine = true;
             }
-
-            part(Lines; "Evidence Voting Subform")
+            part(Lines1; "Evidence Category Subform")
             {
-                SubPageLink = "Idea No.1" = field ("No."); // Vazba mezi otevřeným nápadem a samotnou tabulkou, nemůže být stejná proměnná jako v předchozím subformu
-                // vazba mezi evidence category subform a evidence voting table
-
+                SubPageLink = "Idea No." = field ("No."); // Vazba mezi evidence category subform a category idea connection
             }
-
         }
     }
 
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-
-                trigger OnAction()
-                begin
-
-                end;
-            }
-        }
-
-    }
 
     trigger OnNewRecord(BelowxRec: Boolean)
     begin

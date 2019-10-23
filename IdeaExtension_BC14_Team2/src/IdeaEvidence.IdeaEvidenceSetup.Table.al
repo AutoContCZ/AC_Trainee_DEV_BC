@@ -12,15 +12,14 @@ table 50122 "Idea Evidence Setup"
         }
         field(10; "Idea Evidence Series Nos."; Code[10])
         {
-            Caption = 'Idea Evidence Series Nos.';
+            Caption = 'Ideas Evidence Series No.';
             DataClassification = CustomerContent;
             TableRelation = "No. Series";
         }
-        field(11; "Idea Evid. Voting Series Nos."; Code[10])
+        field(11; "Threshold"; Integer)
         {
-            Caption = 'Idea Evidence Voting Series Nos.';
+            Caption = 'Threshold';
             DataClassification = CustomerContent;
-            TableRelation = "No. Series";
         }
     }
 
@@ -31,28 +30,4 @@ table 50122 "Idea Evidence Setup"
             Clustered = true;
         }
     }
-
-    var
-        myInt: Integer;
-
-    trigger OnInsert()
-    begin
-
-    end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
-
 }

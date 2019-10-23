@@ -5,16 +5,18 @@ page 50122 "Idea Evidence Setup"
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = "Idea Evidence Setup";
+    InsertAllowed = false;
+    DeleteAllowed = false;
 
     layout
     {
         area(Content)
         {
-            field("Idea Evidence Series Nos."; "Idea Evidence Series Nos.")
+            field("Idea Evidence Series No."; "Idea Evidence Series Nos.")
             {
                 ApplicationArea = All;
             }
-            field("Idea Evid. Voting Series No."; "Idea Evid. Voting Series Nos.")
+            field("Threshold"; "Threshold")
             {
                 ApplicationArea = All;
             }
@@ -29,4 +31,10 @@ page 50122 "Idea Evidence Setup"
             INSERT;
         END;
     end;
+
+    trigger OnAfterGetRecord()
+    begin
+
+    end;
+
 }

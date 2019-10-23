@@ -38,8 +38,8 @@ table 50120 "Idea Evidence Header"
         field(7; "State"; Option)
         {
             Caption = 'State';
-            OptionMembers = New,NeedsVotes,UnderReview,Completed,Planned;
-            OptionCaption = 'New,Needs Votes,Under Review,Completed,Planned';
+            OptionMembers = New,NeedsVotes,UnderReview,Completed,Planned,Rejected;
+            OptionCaption = 'New,Needs Votes,Under Review,Completed,Planned,Rejected';
         }
         field(8; "No. Series"; Code[10])
         {
@@ -56,6 +56,14 @@ table 50120 "Idea Evidence Header"
             //                    tabulka z ktere beru data     propojeni mezi seznamem napadu a poradim hlasovani
             // dodelat aby se na cislo nedalo kliknout
         }
+        field(10; "Votes Needed to Review"; Integer)
+        {
+            Caption = 'Votes needed to review';
+            //FieldClass = FlowField;
+            Editable = false;
+            //CalcFormula = sum (field ("Number of Votes"));
+            //CalcFormula = lookup ("Idea Evidence Setup".Threshold where ("Idea Evidence Series Nos." = field ("No. Series")));
+        }
     }
 
     keys
@@ -65,9 +73,6 @@ table 50120 "Idea Evidence Header"
             Clustered = true;
         }
     }
-
-    var
-        myInt: Integer;
 
     trigger OnInsert()
     var
