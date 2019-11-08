@@ -1,3 +1,34 @@
-# AC_Trainee_DEV_BC14
-Repozitář pro testovací vývoj Extension IDEA v BC 14
-Team 1 
+# Application Ideas
+
+Nutno vytvořit záznamy v těchto tabulkách pro fungování extensionu:
+- **Category Filter Dialog Table** (vytvoření 1. záznamu)   
+ - **Categories Table** - Vytvoření záznamů kategorií
+
+Manuálnímu vytváření těchto nezbytných dat by se šlo při instalaci vyhnout inicializací dat pomocí metody `Init()` v instalačním procesu aplikace.
+
+Nutno též vytvořit číselnou řadu a přiřadit ji na **Application Ideas Setup page**.  
+Je také třeba vytvořit záznam pro uživatele na stránce **User Setup** a zaškrtnout přidané pole `Allow Application Ideas Setup` pro editaci stránky **Application Ideas Setup**.
+
+Pro fungování odstranění hlasu při existenci pouze jediného hlasu nad pouze jedním záznamem tabulka se záznamy hlasování nemůže být prázdná. Toto lze též vyřešit pomocí inicializace dat při instalaci aplikace; Vytvořením 1. záznamu nepřiřazeného žádnému uživateli, s hodnotou `No vote`.
+
+*Kategorie **Experience Dynamics 365 Application Ideas**:*
+
+```
+ Data Migrations  
+ Development  
+ Documentation  
+ Financial Management  
+ General  
+ Geographies and Localization  
+ Inventory  
+ Manufacturing  
+ Office Integration  
+ Opportunity Management  
+ Project Management  
+ Purchasing  
+ Reports and Business Intelligence  
+ Sales  
+ Service Order Management  
+ Tenant Administration  
+ Warehousing
+ ```
