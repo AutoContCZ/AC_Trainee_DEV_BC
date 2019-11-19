@@ -16,12 +16,27 @@ page 50134 "Notifications"
                 field("No."; "No.")
                 {
                     ApplicationArea = All;
-
+                    trigger OnDrillDown() // kliknutí na záznam
+                    var
+                        IdeaEvid: Record "Idea Evidence Header";
+                    begin
+                        IdeaEvid.Get("No."); // funkce, která nám vrátí samotný záznam
+                        Page.Run(Page::"Idea Evidence Card", IdeaEvid);
+                        //        stránka, která se má zobrazit    záznam, který se má otevřít
+                    end;
                 }
                 field("Name"; "Name")
                 {
                     ApplicationArea = All;
                     StyleExpr = 'strong';
+                    trigger OnDrillDown() // kliknutí na záznam
+                    var
+                        IdeaEvid: Record "Idea Evidence Header";
+                    begin
+                        IdeaEvid.Get("No."); // funkce, která nám vrátí samotný záznam
+                        Page.Run(Page::"Idea Evidence Card", IdeaEvid);
+                        //        stránka, která se má zobrazit    záznam, který se má otevřít
+                    end;
                 }
                 field("Submitter"; "Submitter")
                 {
@@ -30,6 +45,7 @@ page 50134 "Notifications"
                 field("State"; "State")
                 {
                     ApplicationArea = All;
+
                     StyleExpr = SFond;
                 }
                 field("Number of Votes"; "Number of Votes")
@@ -56,9 +72,14 @@ page 50134 "Notifications"
 
                 trigger OnAction()
                 var
+                    IdEvHeader: Record "Idea Evidence Header";
                 begin
-                    Rec.State := 4;
-                    Rec.Modify(true);
+                    CurrPage.SetSelectionFilter(IdEvHeader);
+                    IdEvHeader.FindSet(false, false);
+                    repeat
+                        IdEvHeader.State := 4;
+                        IdEvHeader.Modify(true);
+                    until IdEvHeader.Next = 0
                 end;
             }
             action("Disapprove")
@@ -70,9 +91,15 @@ page 50134 "Notifications"
                 PromotedCategory = Process; //Abych dostal tlacitko na action toolbar
 
                 trigger OnAction()
+                var
+                    IdEvHeader: Record "Idea Evidence Header";
                 begin
-                    Rec.State := 5;
-                    Rec.Modify(true);
+                    CurrPage.SetSelectionFilter(IdEvHeader);
+                    IdEvHeader.FindSet(false, false);
+                    repeat
+                        IdEvHeader.State := 5;
+                        IdEvHeader.Modify(true);
+                    until IdEvHeader.Next = 0
                 end;
             }
             action("Mark as completed")
@@ -84,9 +111,15 @@ page 50134 "Notifications"
                 PromotedCategory = Process; //Abych dostal tlacitko na action toolbar
 
                 trigger OnAction()
+                var
+                    IdEvHeader: Record "Idea Evidence Header";
                 begin
-                    Rec.State := 3;
-                    Rec.Modify(true);
+                    CurrPage.SetSelectionFilter(IdEvHeader);
+                    IdEvHeader.FindSet(false, false);
+                    repeat
+                        IdEvHeader.State := 3;
+                        IdEvHeader.Modify(true);
+                    until IdEvHeader.Next = 0
                 end;
             }
         }

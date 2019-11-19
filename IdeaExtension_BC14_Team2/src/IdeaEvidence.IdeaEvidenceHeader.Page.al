@@ -16,35 +16,53 @@ page 50120 "Ideas Evidence"
                 field("No."; "No.")
                 {
                     ApplicationArea = All;
-
+                    Width = 2;
                 }
                 field("Name"; "Name")
                 {
                     ApplicationArea = All;
                     StyleExpr = 'strong';
+                    trigger OnDrillDown()
+                    var
+                        IdeaEvid: Record "Idea Evidence Header";
+                    begin
+                        IdeaEvid.Get("No.");
+                        Page.Run(Page::"Idea Evidence Card", IdeaEvid);
+                    end;
                 }
                 field("Submitter"; "Submitter")
                 {
                     ApplicationArea = All;
+                    Width = 4;
                 }
                 field("Date and Time"; "Date and Time")
                 {
                     ApplicationArea = All;
+                    Width = 8;
                 }
                 field("State"; "State")
                 {
                     ApplicationArea = All;
                     StyleExpr = SFond; //nastaveni stylu pisma
+                    trigger OnDrillDown()
+                    var
+                        IdEvHeader: Record "Idea Evidence Header";
+                    begin
+                        IdEvHeader.Get("No.");
+                        IdEvHeader.SetFilter("State", format(IdEvHeader."State"));
+                        Page.Run(Page::"Filtered Ideas", IdEvHeader);
+                    end;
                 }
                 field("Number of Votes"; "Number of Votes")
                 {
                     ApplicationArea = All;
                     StyleExpr = VFond;
-
+                    Width = 2;
                 }
                 field("Votes Needed to Review"; "Votes Needed to Review")
                 {
                     ApplicationArea = All;
+                    Width = 8;
                 }
             }
         }
@@ -103,7 +121,7 @@ page 50120 "Ideas Evidence"
                 var
                     IdEvHeader: Record "Idea Evidence Header";
                 begin
-                    IdEvHeader.SetFilter(State, 'Under Review');
+                    IdEvHeader.SetFilter(State, 'Vyhodnocuje se');
                     Page.Run(Page::"Notifications", "IdEvHeader");
                 end;
             }
@@ -117,9 +135,11 @@ page 50120 "Ideas Evidence"
 
                 trigger OnAction()
                 var
+                    IdEvHead: Record "Idea Evidence Header";
                     EvCodeunit: Codeunit "Idea Evidence Functions";
                 begin
-                    EvCodeunit.AddVote(Rec);
+                    CurrPage.SetSelectionFilter(IdEvHead);
+                    EvCodeunit.AddVote(IdEvHead);
                 end;
             }
             action("Remove Vote")
@@ -133,8 +153,10 @@ page 50120 "Ideas Evidence"
                 trigger OnAction()
                 var
                     EvCodeunit: Codeunit "Idea Evidence Functions";
+                    IdEvHead: Record "Idea Evidence Header";
                 begin
-                    EvCodeunit.RemoveVote(Rec);
+                    CurrPage.SetSelectionFilter(IdEvHead);
+                    EvCodeunit.RemoveVote(IdEvHead);
                 end;
             }
             action("Categories")
@@ -178,8 +200,10 @@ page 50120 "Ideas Evidence"
         IdEvSetup: Record "Idea Evidence Setup";
     begin
         IdEvSetup.FindFirst();
-        "Votes Needed to Review" := IdEvSetup.Threshold - "Number of Votes"; //vypocet sloupce votes needed to review
-        if "Votes Needed to Review" < 0 then "Votes Needed to Review" := 0;
+        if (("State") < 3) then begin       //Abychom nepocitali pro napady,za ktere uz nelze hlasovat pokud se zmeni threshold
+            "Votes Needed to Review" := IdEvSetup.Threshold - "Number of Votes"; //vypocet sloupce votes needed to review
+            if "Votes Needed to Review" < 0 then "Votes Needed to Review" := 0;
+        end;
 
         VFond := IdEvFunctions.GetFondforVotes(Rec);
         SFond := IdEvFunctions.GetFondforStates(Rec);

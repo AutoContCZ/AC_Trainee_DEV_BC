@@ -15,10 +15,12 @@ page 50122 "Idea Evidence Setup"
             field("Idea Evidence Series No."; "Idea Evidence Series Nos.")
             {
                 ApplicationArea = All;
+                StyleExpr = 'strong';
             }
             field("Threshold"; "Threshold")
             {
                 ApplicationArea = All;
+                StyleExpr = 'strong';
             }
         }
     }
@@ -30,11 +32,6 @@ page 50122 "Idea Evidence Setup"
             INIT;
             INSERT;
         END;
-    end;
-
-    trigger OnAfterGetRecord()
-    begin
-
     end;
 
 }

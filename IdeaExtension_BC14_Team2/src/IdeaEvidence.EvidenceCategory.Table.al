@@ -31,8 +31,6 @@ table 50123 "Evidence Category Table"
         key(PK; "Category No.")
         {
             Clustered = true;
-
-
         }
     }
     fieldgroups
@@ -42,27 +40,4 @@ table 50123 "Evidence Category Table"
 
         }
     }
-    var
-        myInt: Integer;
-
-    trigger OnInsert()
-
-    begin
-
-    end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
 }

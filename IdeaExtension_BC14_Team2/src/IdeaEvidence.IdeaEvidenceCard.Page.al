@@ -21,6 +21,12 @@ page 50121 "Idea Evidence Card"
                 field("Name"; "Name")
                 {
                     ApplicationArea = All;
+                    trigger OnValidate()
+                    begin
+                        if "Name" = '' then begin
+                            Message('HMM');
+                        end;
+                    end;
                 }
                 field("Submitter"; "Submitter")
                 {
@@ -55,5 +61,4 @@ page 50121 "Idea Evidence Card"
     begin
         "Submitter" := UserId;
     end;
-
 }
