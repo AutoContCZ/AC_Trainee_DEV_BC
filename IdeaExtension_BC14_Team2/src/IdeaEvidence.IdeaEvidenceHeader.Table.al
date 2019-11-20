@@ -39,7 +39,7 @@ table 50120 "Idea Evidence Header"
         {
             Caption = 'State';
             OptionMembers = New,NeedsVotes,UnderReview,Completed,Planned,Rejected;
-            OptionCaption = 'New,Needs Votes,Under Review,Completed,Planned,Rejected';
+            OptionCaption = 'Nový,Potřebuje více hlasů,Vyhodnocuje se,Implementovaný,Schválený,Zamítnutý';
         }
         field(8; "No. Series"; Code[10])
         {
@@ -59,10 +59,7 @@ table 50120 "Idea Evidence Header"
         field(10; "Votes Needed to Review"; Integer)
         {
             Caption = 'Votes needed to review';
-            //FieldClass = FlowField;
             Editable = false;
-            //CalcFormula = sum (field ("Number of Votes"));
-            //CalcFormula = lookup ("Idea Evidence Setup".Threshold where ("Idea Evidence Series Nos." = field ("No. Series")));
         }
     }
 

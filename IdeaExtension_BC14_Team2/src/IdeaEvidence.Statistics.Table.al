@@ -69,6 +69,10 @@ table 50130 "Statistics Table"
             FieldClass = FlowField;
             CalcFormula = count ("Idea Evidence Header");
         }
+        field(13; "Voters"; Integer)
+        {
+
+        }
     }
 
     keys
@@ -78,7 +82,4 @@ table 50130 "Statistics Table"
             Clustered = true;
         }
     }
-
-    var
-        myInt: Integer;
 }
