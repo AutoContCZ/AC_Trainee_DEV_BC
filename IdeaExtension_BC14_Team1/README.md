@@ -12,7 +12,7 @@ V tomto případě, kdy nemáme instanci serveru s více klienty, lze použít j
 *Instalace*:  
 `Install-NAVApp -ServerInstance BC140CZ -Name ”Suggestions” –Tenant default`
 
-Instalaci lze též porvést i přes web, a to na stránce **Správa rozšíření**
+Instalaci lze též provést i přes web, a to na stránce **Správa rozšíření**
 
 ---
 Nutno vytvořit záznamy v těchto tabulkách pro fungování extensionu:
