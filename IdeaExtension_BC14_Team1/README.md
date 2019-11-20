@@ -1,5 +1,19 @@
 # Application Ideas
 
+### Publikace
+V **Business Central Administration Shell**:
+*Publikace*:
+`Publish-NAVApp -ServerInstance BC140CZ -Path "Cesta_k_Suggestions_1.0.0.0.app_souboru" -SkipVerification`
+
+*Synchronizace*:
+`Sync-NavApp -ServerInstance BC140CZ -Name Suggestions -Version 1.0.0.0 -Tenant default`
+V tomto případě, kdy nemáme instanci serveru s více klienty, lze použít jako parametr *Tenant* default
+
+*Instalace*:
+`Install-NAVApp -ServerInstance BC140CZ -Name ”Suggestions” –Tenant default`
+
+Instalaci lze též porvést i přes web, a to na stránce **Správa rozšíření**
+---
 Nutno vytvořit záznamy v těchto tabulkách pro fungování extensionu:
 - **Category Filter Dialog Table** (vytvoření 1. záznamu)   
  - **Categories Table** - Vytvoření záznamů kategorií

@@ -14,10 +14,6 @@ page 50125 "Evidence Voting Subform"
                 {
                     ApplicationArea = All;
                 }
-                field("Note"; "Note")
-                {
-                    ApplicationArea = All;
-                }
             }
         }
     }

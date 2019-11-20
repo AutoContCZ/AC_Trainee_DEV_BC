@@ -2,7 +2,7 @@ tableextension 50101 "Application Ideas User Setup" extends "User Setup"
 {
     fields
     {
-        field(22; "Allow Application Ideas Setup"; Boolean)
+        field(50105; "Allow Application Ideas Setup"; Boolean)
         {
             Caption = 'Allow Application Ideas Setup';
             DataClassification = CustomerContent;
