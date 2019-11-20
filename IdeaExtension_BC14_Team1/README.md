@@ -6,7 +6,7 @@ V **Business Central Administration Shell**:
 `Publish-NAVApp -ServerInstance BC140CZ -Path "Cesta_k_Suggestions_1.0.0.0.app_souboru" -SkipVerification`
 
 *Synchronizace*:  
-`Sync-NavApp -ServerInstance BC140CZ -Name Suggestions -Version 1.0.0.0 -Tenant default`
+`Sync-NavApp -ServerInstance BC140CZ -Name Suggestions -Version 1.0.0.0 -Tenant default`  
 V tomto případě, kdy nemáme instanci serveru s více klienty, lze použít jako parametr *Tenant* default
 
 *Instalace*:  
