@@ -1,0 +1,31 @@
+{
+    "name": "ac-snippets-pack",
+    "displayName": "AC Snippets Pack",
+    "description": "This is an extension which consists of Visual Studio Code snippets designed for Autocont",
+    "version": "1.0.0",
+    "publisher": "Autocont",
+    "author": {
+		"name": "ACPieger",
+		"url": "http://autocont.cz/",
+        "email": "matus.pieger@autocont.cz" 
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AutoContCZ/AC_Trainee_DEV_BC14/tree/master/"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "al",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
