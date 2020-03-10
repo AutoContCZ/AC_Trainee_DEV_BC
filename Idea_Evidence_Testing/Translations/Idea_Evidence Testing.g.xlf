@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Idea_Evidence Testing">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3699405164 - Field 2005121193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Category Idea Connec. Table EV - Field Category No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3699405164 - Field 1868664698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Idea No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Category Idea Connec. Table EV - Field Idea No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3699405164 - Field 516071817 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Category Idea Connec. Table EV - Field Category Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3699405164 - Field 1329040722 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Category Idea Connec. Table EV - Field Idea Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 251722535 - Field 2005121193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Category No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Evidence Category Table - Field Category No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 251722535 - Field 516071817 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Evidence Category Table - Field Category Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 251722535 - Field 992336821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Evidence Category Table - Field Posts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 528839132 - Field 1205930329 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Idea No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Evidence Voting Table - Field Idea No.1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 528839132 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Evidence Voting Table - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 528839132 - Field 1814464443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Evidence Voting Table - Field User - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 528839132 - Field 3898330339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of votes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Evidence Voting Table - Field Number of votes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2245617730 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Header EV - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2245617730 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Header EV - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2245617730 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Header EV - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2245617730 - Field 409888585 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Submitter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Header EV - Field Submitter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2245617730 - Field 2491730758 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date and Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Header EV - Field Date and Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2245617730 - Field 269761521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>State</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Header EV - Field State - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2245617730 - Field 269761521 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nový,Potřebuje více hlasů,Vyhodnocuje se,Implementovaný,Schválený,Zamítnutý</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Header EV - Field State - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2245617730 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Header EV - Field No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2245617730 - Field 38781443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Votes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Header EV - Field Number of Votes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2245617730 - Field 4223223379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Votes needed to review</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Header EV - Field Votes Needed to Review - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1853050802 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Setup EV - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1853050802 - Field 623570847 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ideas Evidence Series No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Setup EV - Field Idea Evidence Series Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1853050802 - Field 176142393 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Threshold</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Idea Evidence Setup EV - Field Threshold - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1853050802 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Idea Evidence Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Idea Evidence Setup EV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 4137051400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field New - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 3847698598 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Needs more votes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field NeedsVotes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 3182193902 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Under review</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field UnderReview - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 957872088 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Planned</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field Planned - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 3665605423 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Completed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field Completed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 496445946 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rejected</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field Rejected - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 1668694013 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PK</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field Primary key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 1453763869 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Idea most voted for</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field Idea most voted for - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 2649105283 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Idea least voted for</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field Idea least voted for - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 976574837 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total number of votes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field Total number of votes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 3593693398 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Average number of votes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field Average number of votes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 2782583972 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of ideas</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field Number of ideas - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1225107164 - Field 2261741523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Voters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Statistics Table EV - Field Voters - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 248526584 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ideas</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ideas in Category Subform EV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 840207340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Idea Categories</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Evidence Category Page - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4253614163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Categories</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Evidence Category Subform - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2589209288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Idea Voting List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Voting List EV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2587280284 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filtered Ideas</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Filtered Ideas EV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2123257390 - Action 904565795 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check threshold</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ideas Evidence EV - Action Check Threshold - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2123257390 - Action 698539839 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ideas Evidence EV - Action Settings - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2123257390 - Action 2061428202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Notifications</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ideas Evidence EV - Action Notifications - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2123257390 - Action 2371705611 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add Vote</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ideas Evidence EV - Action Add Vote - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2123257390 - Action 4040375146 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove Vote</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ideas Evidence EV - Action Remove Vote - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2123257390 - Action 113145658 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Categories</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ideas Evidence EV - Action Categories - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2123257390 - Action 84074407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statistics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Ideas Evidence EV - Action Statistics - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3549116703 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ideas Notifications</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Notifications EV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3549116703 - Action 803889193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approve</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Notifications EV - Action Approve - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3549116703 - Action 2572546515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Disapprove</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Notifications EV - Action Disapprove - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3549116703 - Action 1418817766 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Mark as completed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Notifications EV - Action Mark as completed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Voting statistics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 3500466071 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ideas Statistics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Categories of Ideas - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 3917986244 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Number of Ideas - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 1289356582 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Needs more votes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Being voted on - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 97138140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Voting Statistics - Numbers</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Voting Statistics - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 1325063765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total [Votes]</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Total number of Votes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 3593693398 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Average [Votes/Idea]</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Average number of votes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 2261741523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Voters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Voters - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 885142867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Voting Statistics - Idea most voted for</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Voting Statistics - Max - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 1453763869 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Idea most voted for - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 1754823801 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Voting Statistics - Idea least voted for</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Voting Statistics - Min - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Control 2649105283 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Control Idea least voted for - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3030785983 - Action 32494317 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All users that have voted</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Statistics Page EV - Action All users - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3159203038 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Actions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestActionsPage01EV - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

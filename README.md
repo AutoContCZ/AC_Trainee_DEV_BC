@@ -1,2 +1,2 @@
-# Outdated AC_Trainee_DEV_BC
-Repozitář s původními verzemi obou rozšíření Evidence Nápadů
+# AC_Trainee_DEV_BC14
+Repozitář pro testovací vývoj trainee v BC 14

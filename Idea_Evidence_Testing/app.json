@@ -1,0 +1,63 @@
+{
+  "id": "f2cbebfb-5367-4e15-9602-577e30e21572",
+  "name": "Idea_Evidence Testing",
+  "publisher": "AutocontCZ",
+  "version": "1.0.0.0",
+  "brief": "Idea evidence testing",
+  "description": "Idea evidence testing app",
+  "privacyStatement": "https://this-page-intentionally-left-blank.org/",
+  "EULA": "https://this-page-intentionally-left-blank.org/",
+  "help": "https://this-page-intentionally-left-blank.org/",
+  "url": "https://this-page-intentionally-left-blank.org/",
+  "logo": "gfx\\600x500.png",
+  "features": ["TranslationFile"],
+  "dependencies": [
+    {
+      "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "publisher": "Microsoft",
+      "name": "System Application",
+      "version": "1.0.0.0"
+    },
+    {
+      "id": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "publisher": "Microsoft",
+      "name": "Base Application",
+      "version": "15.0.0.0"
+    },
+    {
+      "id": "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
+      "publisher": "Microsoft",
+      "name": "Library Assert",
+      "version": "15.0.0.0"
+    },
+    {
+      "id": "e7320ebb-08b3-4406-b1ec-b4927d3e280b",
+      "publisher": "Microsoft",
+      "name": "Any",
+      "version": "15.0.0.0"
+    },
+    {
+      "id": "9856ae4f-d1a7-46ef-89bb-6ef056398228",
+      "publisher": "Microsoft",
+      "name": "System Application Test Library",
+      "version": "15.0.0.0"
+    },
+    {
+      "id": "5d86850b-0d76-4eca-bd7b-951ad998e997",
+      "publisher": "Microsoft",
+       "name": "Tests-TestLibraries",
+       "version": "15.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "15.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://Idea_Evidence_Testing.com/help/",
+  "showMyCode": true,
+  "runtime": "4.2"
+}

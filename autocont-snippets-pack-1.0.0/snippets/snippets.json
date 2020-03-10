@@ -1,0 +1,153 @@
+{
+    "Page (AC)": {
+        "prefix": "tpageac",
+        "body": [
+          "page ${1:Id} ${2:MyPage}",
+          "    {",
+          "        PageType = ${3:Card};",
+          "        ApplicationArea = All;",
+          "        UsageCategory = Administration;",
+          "        SourceTable = ${4:TableName};",
+          "        ",
+          "        layout",
+          "        {",
+          "            area(Content)",
+          "            {",
+          "                group(GroupName)",
+          "                {",
+          "                    field(Name; NameSource)",
+          "                    {",
+          "                        ApplicationArea = All;",
+          "                        ",
+          "                    }",
+          "                }",
+          "            }",
+          "        }",
+          "        ",
+          "        actions",
+          "        {",
+          "            area(Processing)",
+          "            {",
+          "                action(ActionName)",
+          "                {",
+          "                    ApplicationArea = All;",
+          "                }",
+          "            }",
+          "        }",
+          "    }"
+        ],
+        "description": "Autocont snippet for page"
+    },
+
+        "Pageextension (AC)": {
+            "prefix": "tpageextac",
+            "body": [
+                "pageextension ${1:Id} ${2:MyExtension} extends ${3:MyTargetPage}\r",
+                "{\r",
+                "    // ${4:Comment} \r",
+                "\r",
+                "    layout\r",
+                "    {\r",
+                "        addlast(${5:Content})\r",
+                "        {\r",
+                "            field(${6:MyField}; ${6:FieldSource})\r",
+                "            {\r",
+                "                ApplicationArea = All;\r",
+                "            }\r",
+                "        }\r",
+                "    }\r",
+                "    \r",
+                "    actions\r",
+                "    {\r",
+                "    }\r",
+                "}"
+        ],
+        "description": "Autocont snippet for page extension"
+    },
+
+        "Procedure (AC)": {
+            "prefix": "tprocedureac",
+            "body": [
+                "local procedure ${1:MyProcedure}(Parameter: Record \"${2:Parameter Table}\")",
+                "    var",
+                "        MyTable: Record \"${3:My Table}\";",
+                "    begin",
+                "        $4",
+                "    end;"
+        ],
+        "description": "Autocont snippet for procedure"
+    },
+
+        "Table (AC)": {
+            "prefix": "ttableac",
+            "body":[
+                "table ${1:id} ${2:MyTable}",
+                "{",
+                "    DataClassification = ${3:CustomerContent};",
+                "    Caption = '${2:MyTable}';",
+                "    LookupPageId = \"${4:ToBeClassified}\";",
+                "    DrillDownPageId = \"${5:ToBeClassified}${6: }\";",
+                "    fields",
+                "    {",
+                "        field(1; ${7:MyField}; ${8:DataType})",
+                "        {",
+                "            Caption = '${7:MyCaption}';",
+                "            DataClassification = ${9:CustomerContent}${10: };",
+                "        }",
+                "    }",
+                "    keys",
+                "    {",
+                "        key(${11:PK}; ${12:MyField})",
+                "        {",
+                "            Clustered = ${13:true};",
+                "        }",
+                "    }",
+                "}"
+        ],
+        "description": "Autocont snippet for table"
+    },
+            
+        "Table field (AC)": {
+            "prefix": "tfieldac",
+             "body":[
+                "field(${1:id};${2:FieldName}; ${3:DataType})",
+                "{",
+                "    \tCaption='${2:Name}';",
+                "    \tDataClassification = CustomerContent;",
+                "}"
+        ],
+        "description": "Autocont snippet for field"
+    },
+    
+        "Flow field (AC)": {
+            "prefix": "tflowfieldac",
+            "body":[
+                "field(${1:id};${2:FieldName}; ${3:DataType})",
+                "{",
+                "    \tCaption='${2:Name}';",
+                "    \tDataClassification = CustomerContent;",
+                "    \tFieldClass = FlowField;",
+                "    \tCalcFormula = ${4:Operation}(${5:tableName});",
+                "}"
+        ],
+        "description": "Autocont snippet for flowfield"
+    },
+
+        "Table Extension (AC)": {
+            "prefix": "ttableextac",
+            "body":[
+                "tableextension ${1:id} ${2:ExtensionName} extends ${3:TargetTableName}",
+                "{",
+                "   \tfields",
+                "   \t{",
+                "      \t\tfield(${4:id};${5:FieldName}; ${6:DataType})",
+                "      \t\t{",
+                "         \t\t\tCaption='${5:Name}';",
+                "         \t\t\tDataClassification = CustomerContent;",
+                "      \t\t}",
+                "   \t}",
+                "}"
+        ],
+        "description": "Autocont snippet for tableextension"
+    }
+}
