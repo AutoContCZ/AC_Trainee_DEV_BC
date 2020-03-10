@@ -1,2 +1,2 @@
 # AC_Trainee_DEV_BC14
-Repozitář pro testovací vývoj trainee v BC 14
+Repozitář s rozšířením Evidence Nápadů pro Business Central 15
