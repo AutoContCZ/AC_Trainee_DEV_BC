@@ -1,0 +1,28 @@
+{
+  "id": "f2cbebfb-5367-4e15-9602-577e30e21572",
+  "name": "Idea_Evidence Testing",
+  "publisher": "AutocontCZ",
+  "version": "1.0.0.0",
+  "brief": "Idea evidence testing",
+  "description": "Idea evidence testing app",
+  "privacyStatement": "https://this-page-intentionally-left-blank.org/",
+  "EULA": "https://this-page-intentionally-left-blank.org/",
+  "help": "https://this-page-intentionally-left-blank.org/",
+  "url": "https://this-page-intentionally-left-blank.org/",
+  "logo": "gfx\\600x500.png",
+  "features": ["TranslationFile"],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "http://tempuri.org/help/",
+  "showMyCode": true,
+  "target": "Extension",
+  "runtime": "3.0",
+  "test": "14.0.0.0"
+}
